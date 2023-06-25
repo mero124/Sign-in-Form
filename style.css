@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(237 243 255 / 1);
+    
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 150px auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .first-p {
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+    font-weight: bold;
+}
+
+.container .second-p {
+    position: absolute;
+    top: 15rem;
+    left: 4rem;
+    font-weight: bold;
+}
+
+.container input.username {
+    position: absolute;
+    top: 9.5rem;
+    left: 4rem;
+    width: 360px;
+    height: 60px;
+    border: 1px solid rgb(203 213 225 / 1);
+}
+
+.container input.password {
+    position: absolute;
+    top: 17rem;
+    left: 4rem;
+    width: 360px;
+    height: 60px;
+    border: 1px solid rgb(203 213 225 / 1);
+}
+
+h1 {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+}
+
+a.sign-in {
+    position: absolute;
+    top: 22rem;
+    left: 4rem;
+    width: 130px;
+    height: 50px;
+    background-color: #4d49e8;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.forgot-password {
+    position: absolute;
+    top: 23rem;
+    left: 14rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container p:nth-child(8) {
+    position: absolute;
+    bottom: 3rem;
+    left: 10rem;
+    font-weight: bold;
+}
+
+.sign-up {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 13rem;
+    bottom: 2rem;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    background-color: #4d49e8;
+    z-index: -1;
+    left: 8rem;
+    top: -3rem;
+    border-radius: 10px;
+}
